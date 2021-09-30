@@ -15,6 +15,12 @@
     margin-bottom: 20px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* **** header **** */
 
 .header-top {
@@ -26,14 +32,28 @@
 }
 
 
+/* **** main **** */
 
+.title {
+    width: 100%;
+}
 
+.side-left, .side-right {
+    width: 20%;
+}
+
+.center {
+    width: 56%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.side-left, .center, .side-right {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
 /* debug */
-
-.debug .container {
-    
-}
 
 .debug .header-top {
     background-color: #e579e6;
@@ -42,6 +62,24 @@
 .debug .header-bottom {
     
     background-color: #e1d67a;
+}
+
+.debug .title {
+    height: 12%;
+}
+
+.debug main {
+    height: 600px;
+    background-color: #0086ff;
+}
+
+.debug section {
+    background-color: #abcfe7;
+}
+
+.debug .side-left, .debug .center, .debug .side-right {
+    height: 80%;
+    float: left;
 }
 
 
