@@ -7,8 +7,8 @@
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 76%;
+    margin: 20px auto;
 }
 
 .mb-20 {
@@ -34,6 +34,10 @@
 
 /* **** main **** */
 
+main {
+    margin-bottom: 10px;
+}
+
 .title {
     width: 100%;
 }
@@ -51,6 +55,12 @@
 .side-left, .center, .side-right {
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+/* ***** footer **** */
+
+footer {
+    height: 40px;
 }
 
 /* debug */
@@ -80,6 +90,10 @@
 .debug .side-left, .debug .center, .debug .side-right {
     height: 80%;
     float: left;
+}
+
+.debug footer {
+    background-color: #8403fd;
 }
 
 
